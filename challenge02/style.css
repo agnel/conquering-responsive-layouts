@@ -23,15 +23,34 @@ body {
   font-family: sans-serif;
 }
 
-.container {
-  width: 80%;
-  max-width: 750px;
-  margin: 0 auto;
-  background: #23424a;
-  color: white;
-  padding: 50px 0;
+@media screen and (min-width: 750px) {
+  .inner-content {
+    max-width: 750px;
+  }
 }
 
-.intro-content {
+.top-container {
+  background: #23424a;
+  color: white;
+  padding: 50px 2em;
+}
+
+.body-container {
+  background: white;
+  color: #23424a;
+  padding: 0 2em;
+}
+
+.inner-container {
+  text-align: left;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.inner-content {
+  max-width: 750px;
+}
+
+.top-container .inner-content {
   width: 50%;
 }
